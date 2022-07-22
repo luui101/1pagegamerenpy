@@ -4,104 +4,91 @@
 # name of the character.
 
 # define e = Character('me', color="#E6E6FA")
-
-
+image image_1= "bg_skye.jpg"
+define me = Character('me')
 # The game starts here.
 
 label start:
+      "me""We the People"
+      "me""The Soliloquy"
+label backgound:
+     scene image_1
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+     show fullbody_eyeclose_mouthclose
 
-    # scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+     "me""Everyday I wake up to a gray world or red thick air. My head is filled with these questions..."
+     show halfbody_eyeclose_mouthclose
 
-    # show eileen happy
-
-    # These display lines of dialogue.
-
-    # e "You've created a new Ren'Py game."
-
-    # e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
-    "We the People"
-    "The Soliloquy"
-
-    label choices:
-        "Everyday I wake up to a gray world or red thick air. My head is filled with these questions..."
-    menu:
+     menu:
         "to be?":
             $ answer = True
 
         "or not to be?":
             $ answer = True
-    menu:
+     show halfbody_eyeclose_mouthsmile
+
+     menu:
          "who to know?":
              $ answer = True
 
          "To Know who?":
              $ answer = True
-    menu:
+     menu:
         "Why, you ask?":
             $ answer = True
 
         "Just ask, why not?":
             $ answer = True
-    menu:
+     menu:
         "Who to say?":
             $ answer = True
 
         "Or perhaps, say to who?":
             $ answer = True
-    menu:
+     menu:
         "Can I?":
             $ answer = True
 
         "Can you?":
             $ answer = True
-    menu:
+     menu:
         "How could I?":
             $ answer = True
 
         "How I could?":
             $ answer = True
-    menu:
+     menu:
         "Why do you bother?":
             $ answer = True
 
         "Why bother you?":
             $ answer = True
-    menu:
+     menu:
         "Mind you?":
             $ answer = True
 
         "Do you mind?":
             $ answer = True
-    menu:
+     menu:
         "Love is blind":
             $ answer = True
 
         "Blinding love":
             $ answer = True
-    menu:
+     menu:
         "Who could blame me?":
             $ answer = True
 
         "Who could I blame?":
             $ answer = True
-    menu:
+     menu:
         "I must argue":
             $ answer = True
 
         "Must I argue?":
             $ answer = True
-    menu:
+     menu:
         "To love":
             $ answer = True
 
@@ -110,16 +97,19 @@ label start:
 
         "Or none":
             $ answer = True
-    menu:
+     menu:
         "There's no hope":
             $ answer = True
 
         "Is there?":
             $ answer = True
-    "I turn my head to look out the window, I see it is a nice day today."
-    "I take a deep breath and think to myself"
-    "If winter comes, can spring be far behind"
+     show halfbody_eyeopen_mouthclose
+
+     "me""I turn my head to look out the window, I see it is a nice day today."
+     "me""I take a deep breath and think to myself"
+     "me""If winter comes, can spring be far behind"
+     show halfbody_eyeopen_mouthsmile
+     
 
 
-
-    return
+     return
