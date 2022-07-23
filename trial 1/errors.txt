@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 20: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    "me""Everyday I wake up to a gray world or red thick air. My head is filled with these questions..."
-    ^
+File "game/script.rpy", line 62: Indentation mismatch.
 
-Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Jul 21 18:27:10 2022
+Ren'Py Version: Ren'Py 8.0.0.22062402
+Fri Jul 22 11:11:26 2022

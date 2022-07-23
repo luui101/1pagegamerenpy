@@ -9,31 +9,60 @@ define me = Character('me')
 # The game starts here.
 
 label start:
-      "me""We the People"
-      "me""The Soliloquy"
-label backgound:
+
+     "It's the morning, again."
+
      scene image_1
+
+     "Everyday, I wake up to a gray world of red thick air."
 
      show fullbody_eyeclose_mouthclose
 
+     "With pain and sorrow."
+     "I'm not sure if I can keep going."
 
-     "me""Everyday I wake up to a gray world or red thick air. My head is filled with these questions..."
+     hide fullbody_eyeclose_mouthclose
+
+     "As always,"
+     "my head is filled with these questions..."
+
      show halfbody_eyeclose_mouthclose
 
      menu:
-        "to be?":
+        "To be?":
             $ answer = True
 
-        "or not to be?":
+        "Or not to be?":
             $ answer = True
-     show halfbody_eyeclose_mouthsmile
 
      menu:
-         "who to know?":
+         "Who am I?":
              $ answer = True
 
-         "To Know who?":
+         "Who am I NOT?":
              $ answer = True
+
+     hide halfbody_eyeclose_mouthclose
+
+     show halfbody_eyeclose_mouthsmile
+
+     "(chuckle)"
+
+     hide halfbody_eyeclose_mouthsmile
+
+     show halfbody_eyeclose_mouthopen
+
+     menu:
+         "Who knows?":
+             $ answer = True
+
+         "Knowing who?":
+             $ answer = True
+
+     hide halfbody_eyeclose_mouthopen
+
+     show halfbody_eyeclose_mouthclose
+
      menu:
         "Why, you ask?":
             $ answer = True
@@ -56,8 +85,13 @@ label backgound:
         "How could I?":
             $ answer = True
 
-        "How I could?":
+        "How could you?":
             $ answer = True
+
+     hide halfbody_eyeclose_mouthclose
+
+     show halfbody_eyeclose_mouthopen
+
      menu:
         "Why do you bother?":
             $ answer = True
@@ -65,16 +99,21 @@ label backgound:
         "Why bother you?":
             $ answer = True
      menu:
-        "Mind you?":
+        "Mind you.":
             $ answer = True
 
-        "Do you mind?":
+        "But, do you mind?":
             $ answer = True
+
+     hide halfbody_eyeclose_mouthopen
+
+     show halfbody_eyeclose_mouthclose
+
      menu:
-        "Love is blind":
+        "That Love is blind.":
             $ answer = True
 
-        "Blinding love":
+        "And I blindly love.":
             $ answer = True
      menu:
         "Who could blame me?":
@@ -82,34 +121,60 @@ label backgound:
 
         "Who could I blame?":
             $ answer = True
+
+     "But myself..."
+
+     hide halfbody_eyeclose_mouthclose
+
+     show halfbody_eyeclose_mouthopen
+
      menu:
-        "I must argue":
+        "I must argue!":
             $ answer = True
 
         "Must I argue?":
             $ answer = True
+
+     hide halfbody_eyeclose_mouthclose
+
+     show halfbody_eyeclose_mouthopen
+
      menu:
-        "To love":
+        "To love.":
             $ answer = True
 
-        "To be love":
+        "To be loved":
             $ answer = True
 
-        "Or none":
+        "Or none.":
             $ answer = True
      menu:
-        "There's no hope":
+        "There's no hope!":
             $ answer = True
 
         "Is there?":
             $ answer = True
+
+     hide halfbody_eyeclose_mouthclose
      show halfbody_eyeopen_mouthclose
 
-     "me""I turn my head to look out the window, I see it is a nice day today."
-     "me""I take a deep breath and think to myself"
-     "me""If winter comes, can spring be far behind"
+     "I turn my head to look out the window, I see it is a nice day today."
+
+     hide halfbody_eyeopen_mouthclose
+     show halfbody_eyeopen_mouthopen
+
+     "I take a deep breath and think to myself"
+
+     hide halfbody_eyeclose_mouthopen
      show halfbody_eyeopen_mouthsmile
-     
+
+
+     "If winter comes, can spring be far behind?"
+
+     hide halfbody_eyeclose_mouthopen
+     show halfbody_eyeopen_mouthsmile
+
+     "I'm okay."
 
 
      return
