@@ -9,6 +9,9 @@ define me = Character('me')
 # The game starts here.
 
 label start:
+     label bgm:
+        play music "audio/bg audio.mp3" loop
+
 
      "It's the morning, again."
 
